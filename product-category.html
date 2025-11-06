@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запчасти для грузовых иномарок</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/logo/trak35_favicon.svg" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-desk">
+            <div class="main-menu__wrapper">
+                <div class="container">
+                    <div class="header__content">
+                        <nav class="main-menu__nav">
+                            <a href="#">О компании</a>
+                            <a href="#">Спецпредложения</a>
+                            <a href="#">Доставка и оплата</a>
+                            <a href="#">Новости</a>
+                            <a href="#">Контакты</a>
+                        </nav>
+
+                        <div class="main-menu__contact-info">
+                            <div class="main-menu__contact-info__city">
+                                <div class="main-menu__contact-info__city__icon">
+                                    <a href="#">
+                                        <img src="images/header/map.svg" alt="Карта" />
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <span class="border-bottom__text">Череповец</span>
+                                </a>
+                            </div>
+
+                            <div class="separator1"></div>
+
+                            <div class="main-menu__phone">
+                                <div class="main-menu__phone__icon">
+                                    <img src="images/header/phone.svg" alt="Телефон">
+                                </div>
+                                <div class="main-menu__phone__number">
+                                    <a href="tel:+78202291281" class="main-menu__phone__link">+7 (8202) 29-12-81</a>
+                                    <a href="tel:+79212523507" class="main-menu__phone__link">+7 921 252-35-07</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="button--callback">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="secondary-menu-wrapper">
+                <div class="container">
+                    <div class="secondary-menu">
+                        <div class="header__content">
+                            <a href="index.html">
+                                <div class="secondary-menu__logo">
+                                    <img src="images/logo/trak35_logo.png" alt="Логотип АвтоТрак">
+                                </div>
+                            </a>
+
+                            <div class="secondary-menu__search">
+                                <div class="secondary-menu__search__wrapper">
+                                    <input type="text" placeholder="Поиск товаров в каталоге">
+                                    <span class="secondary-menu__search__button">
+                                        <img src="images/header/search.svg" alt="Поиск">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="secondary-menu__actions">
+                                <div class="secondary-menu__actions__zapchast">
+                                    <a href="#"><img src="images/header/zakazat_zapchast.svg" alt="Заказ">
+                                        <span class="border-bottom__text">Заказать запчасти</span>
+                                    </a>
+                                </div>
+
+                                <div class="secondary-menu__actions__lk">
+                                    <a href="#"><img src="images/header/user_lk.svg" alt="ЛК">
+                                        Личный кабинет
+                                    </a>
+                                </div>
+
+                                <div class="secondary-menu__actions__korzina">
+                                    <a href="#"><img src="images/header/korzina.svg" alt="Корзина">
+                                        Корзина
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="bottom-menu-wrapper">    
+            <div class="container">    
+                <div class="bottom-menu">
+                    <div class="header__content">
+                        <a class="bottom-menu__nav-item" href="catalog.html">
+                            <img src="images/header/catalog.svg" alt="Каталог">
+                            Каталог товаров
+                        </a>
+                        <div class="separator2"></div>
+                        <a class="bottom-menu__nav-item" href="#">
+                            <img src="images/header/autohim.svg" alt="Автохим">
+                            Автохимия
+                        </a>
+                        <div class="separator2"></div>
+                        <a class="bottom-menu__nav-item" href="#">
+                            <img src="images/header/akb.svg" alt="АКБ">
+                            АКБ
+                        </a>
+                        <div class="separator2"></div>
+                        <a class="bottom-menu__nav-item" href="#">
+                            <img src="images/header/shini.svg" alt="Шины">
+                            Шины, камеры
+                        </a>
+                        <div class="separator2"></div>
+                        <a class="bottom-menu__nav-item" href="#">
+                            <img src="images/header/instrument.svg" alt="Инструмент">
+                            Инструменты
+                        </a>
+                        <div class="separator2"></div>
+                        <a class="bottom-menu__nav-item" href="#">
+                            <img src="images/header/aksessuar.svg" alt="Аксессуар">
+                            Аксессуары
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>
+
+        <div class="header-mobile">
+            <div class="header-mobile-top">
+                <div class="header-mobile-top-content">
+                    <div class="header-mobile-top-content-burger" id="burger">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                    <a href="#" class="header-mobile-top-content-logo">
+                        <img src="images/logo/trak35_logo.png" alt="Логотип АвтоТрак">
+                    </a>
+                    <a class="header-mobile-top-content-cart" href="#">
+                        <img src="images/header/korzina.svg" alt="Корзина">
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-mobile-search-top">
+                <div class="header-mobile-search-top__wrapper">
+                    <input type="text" placeholder="Поиск товаров в каталоге">
+                    <span class="header-mobile-search-top__button">
+                        <img src="images/header/search.svg" alt="Поиск">
+                    </span>
+                </div>
+            </div>
+
+            <div class="header-mobile-menu" id="mobile-menu">
+                <div class="header-mobile-menu-interface">
+                    <a class="header-mobile-menu-interface__item" href="#">
+                        <img src="images/header/user_lk.svg" alt="ЛК">
+                        <span class="header-mobile-menu-interface__text">Личный кабинет</span>
+                    </a>
+                    <a class="header-mobile-menu-interface__item" href="#">
+                        <img src="images/header/zakazat_zapchast.svg" alt="Заказ">
+                        <span class="header-mobile-menu-interface__text">Заказать запчасти</span>
+                    </a>
+                    <a class="header-mobile-menu-interface__item" href="#">
+                        <img src="images/header/catalog_mobile.svg" alt="Каталог">
+                        <span class="header-mobile-menu-interface__text">Каталог</span>
+                    </a>
+                </div>
+
+                <div class="header-mobile-menu-nav">
+                    <a href="#">О компании</a>
+                    <a href="#">Спецпредложения</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Контакты</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="catalog-autotrak">
+        <div class="container">
+
+            <div class="page-catalog__nav">
+                <a class="page-catalog__nav__main" href="#">Главная</a>
+                <span class="page-catalog__nav__separator">|</span>
+                <a class="page-catalog__nav__catalog" href="#">Каталог</a>
+                <span class="page-catalog__nav__separator">|</span>
+                <span class="page-catalog__nav__current-page">Запчасти</span>
+            </div>
+
+            <div class="page-catalog__title">
+                <p class="page-catalog__title__title">Запчасти для грузовых иномарок</p>
+                <span class="page-catalog__count">4 356 товара</span>
+            </div>
+
+
+            <!-- кнопка для фильтров в мобильной версии -->
+            <!-- <div class="mobile-filter-toggle" id="mobileFilterToggle">
+                <span>Фильтры</span>
+            </div> -->
+
+
+            <div class="page-catalog__main">
+                <div class="page-catalog__main__filter">
+                    <div class="filter-select">
+                        <div class="filter-select__row">
+                            <div class="filter-select__header">
+                                <div class="filter-select__header__content">
+                                    <p class="filter-select__header__title">Запчасти</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-select__wrapper">
+                            <div class="filter-select__scrollable-wrapper">
+                                <div class="filter-select__scrollable">
+                                    <div class="filter-options">
+                                        <a href="#">Запчасти для грузовых иномарок</a>
+                                        <a href="#">КАМАЗ</a>
+                                        <a href="#">КРАЗ</a>
+                                        <a href="#">МАЗ</a>
+                                        <a href="#">МТЗ-80, 82 (Д-240/245)</a>
+                                        <a href="#">Запчасти для грузовых иномарок</a>
+                                        <a href="#">КАМАЗ</a>
+                                        <a href="#">КРАЗ</a>
+                                        <a href="#">МАЗ</a>
+                                        <a href="#">МТЗ-80, 82 (Д-240/245)</a>
+                                    </div>
+                                </div>
+                                <div class="filter-select__scrollbar-container">
+                                    <div class="filter-select__scrollbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-quantity">
+                        <div class="filter-quantity__row">
+                            <div class="filter-quantity__row__header">
+                                <p class="filter-quantity__row__header__title">Цена</p>
+                                <div class="filter-header__show-open">
+                                    <img src="images/page_catalog/open.svg" class="filter-arrow">
+                                </div>
+                            </div>
+                            
+                            <div class="filter-quantity__wrapper">
+                                <div class="filter-quantity__inputs">
+                                    <input class="filter-quantity__min" type="number" placeholder="0">
+                                    <span class="filter-quantity__separator">—</span>
+                                    <input class="filter-quantity__max" type="number" placeholder="150000">
+                                </div>
+                                <div class="filter-quantity__range">
+                                    <span class="price-range"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-quantity__row">
+                            <div class="filter-quantity__row__header">
+                                <p class="filter-quantity__row__header__title">Профиль шины, %</p>
+                                <div class="filter-header__show-open">
+                                    <img src="images/page_catalog/open.svg" class="filter-arrow">
+                                </div>
+                            </div>
+                            
+                            <div class="filter-quantity__wrapper">
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        25%
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        30%
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        40%
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        50%
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-quantity__row">
+                            <div class="filter-quantity__row__header">
+                                <p class="filter-quantity__row__header__title">Расстояние между отверстиями колесного диска, мм</p>
+                                <div class="filter-header__show-open">
+                                    <img src="images/page_catalog/open.svg" class="filter-arrow">
+                                </div>
+                            </div>
+                            
+                            <div class="filter-quantity__wrapper">
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        100 мм
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        112 мм
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        114.3 мм
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        120 мм
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="bolt_distance">
+                                        <span class="checkmark"></span>
+                                        130 мм
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-quantity__row">
+                            <div class="filter-quantity__row__header">
+                                <p class="filter-quantity__row__header__title">Тип колесного диска</p>
+                                <div class="filter-header__show-open">
+                                    <img src="images/page_catalog/open.svg" class="filter-arrow">
+                                </div>
+                            </div>
+                            
+                            <div class="filter-quantity__wrapper">
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="wheel_type">
+                                        <span class="checkmark"></span>
+                                        Литой
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="wheel_type">
+                                        <span class="checkmark"></span>
+                                        Штампованный
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-quantity__row">
+                            <div class="filter-quantity__row__header">
+                                <p class="filter-quantity__row__header__title">Ширина колесного диска, дюйм</p>
+                                <div class="filter-header__show-open">
+                                    <img src="images/page_catalog/open.svg" class="filter-arrow">
+                                </div>
+                            </div>
+                            
+                            <div class="filter-quantity__wrapper">
+                                <div class="filter-quantity__scrollable-wrapper">
+                                    <div class="filter-quantity__scrollable">
+                                        <div class="filter-options">
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                5
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                5.5
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                6
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                6.5
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                7
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                7.5
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                8
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                8.5
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                9
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                9.5
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="checkbox" name="wheel_width">
+                                                <span class="checkmark"></span>
+                                                10
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="filter-quantity__scrollbar-container">
+                                        <div class="filter-quantity__scrollbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-quantity__row">
+                            <div class="filter-quantity__row__header">
+                                <p class="filter-quantity__row__header__title">Дополнительно</p>
+                                <div class="filter-header__show-open">
+                                    <img src="images/page_catalog/open.svg" class="filter-arrow">
+                                </div>
+                            </div>
+                            
+                            <div class="filter-quantity__wrapper">
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="additional">
+                                        <span class="checkmark"></span>
+                                        Только с фото
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="additional">
+                                        <span class="checkmark"></span>
+                                        Акции
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="additional">
+                                        <span class="checkmark"></span>
+                                        Новинки
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="additional">
+                                        <span class="checkmark"></span>
+                                        Только в наличии
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-quantity__row__results">
+                            <div class="filter-quantity__row__header__results">Подобрано 468 товара</div>
+                            
+                            <div class="filter-quantity__row__buttons">
+                                <span class="button--show">Показать</span>
+                                <span class="button--reset">Сбросить</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="page-catalog__main__right">
+
+                    <div class="page-catalog__main__right__controls">
+
+                        <div class="page-catalog__main__right__controls__sort">
+                            <div class="controls__sort__sort">Сортировка:</div>
+                            <span class="page-catalog__main__right__controls__sort__default">по умолчанию</span>
+                            <span class="page-catalog__main__right__controls__sort__price">по цене
+                                <img src="images/page_catalog/sort_icon.svg">
+                            </span>
+                            <span class="page-catalog__main__right__controls__sort__name">по наименованию
+                                <img src="images/page_catalog/sort_icon.svg">
+                            </span>
+                        </div>
+
+                        <div class="page-catalog__main__right__controls__type-view">
+                            <div class="page-catalog__main__right__controls__type-view__wide active">
+                                <img src="images/page_catalog/controls_wide.svg">
+                            </div>
+                            <div class="page-catalog__main__right__controls__type-view__tile">
+                                <img src="images/page_catalog/controls_tile.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-catalog__main__right__products">
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/1.png">
+                                </div>
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Электродвигатель отопителя с вентилятором Airtronic
+                                        D4S 24V DAF, MAN TGL,TGM,TGA EBERSPECHER 252145992000 (1537011, 9902002440)</p>
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">43 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/2.png">
+                                </div>
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Амортизатор гидравлический</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">2 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/no_photo.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Экран 260</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__empty-price">Цена по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/zapros_tovar.svg">
+                                    <span>Запросить цену</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/1.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Электродвигатель отопителя с вентилятором Airtronic
+                                        D4S 24V DAF, MAN TGL,TGM,TGA EBERSPECHER 252145992000 (1537011, 9902002440)</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">43 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/2.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Амортизатор гидравлический</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">2 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/no_photo.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Экран 260</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__empty-price">Цена по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/zapros_tovar.svg">
+                                    <span>Запросить цену</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/1.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Электродвигатель отопителя с вентилятором Airtronic
+                                        D4S 24V DAF, MAN TGL,TGM,TGA EBERSPECHER 252145992000 (1537011, 9902002440)</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">43 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/2.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Амортизатор гидравлический</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">2 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/no_photo.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Экран 260</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__empty-price">Цена по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/zapros_tovar.svg">
+                                    <span>Запросить цену</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/1.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Электродвигатель отопителя с вентилятором Airtronic
+                                        D4S 24V DAF, MAN TGL,TGM,TGA EBERSPECHER 252145992000 (1537011, 9902002440)</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">43 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a class="product-card" href="#">
+                            <div class="product-card__wrapper">
+
+                                <div class="product-card__img">
+                                    <img src="images/page_catalog/product_card/2.png">
+                                </div>
+
+                                <div class="product-card__info">
+                                    <p class="product-card__title">Амортизатор гидравлический</p>
+
+                                    <div class="product-card__price">
+                                        <div class="product-card__price__block">
+                                            <span class="product-card__price__block__price">2 300 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="product-card__button">
+                                    <img src="images/page_catalog/product_card/button_korzina.svg">
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="page-catalog__main__right__pagination__wrapper">
+
+                        <div class="pagination">
+                            <span class="pagination__item__back">
+                                <img src="images/page_catalog/left.svg">
+                            </span>
+                            <span class="pagination__item">1</span>
+                            <span class="pagination__item">2</span>
+                            <span class="pagination__item">3</span>
+                            <span class="pagination__item">4</span>
+                            <span class="pagination__item">5</span>
+                            <span class="pagination__item">...</span>
+                            <span class="pagination__item">15</span>
+                            <span class="pagination__item__next">
+                                <img src="images/page_catalog/right.svg">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-catalog__wrapper">
+            <div class="container">
+                <div class="footer-catalog">
+                    <p class="footer-catalog__title">Каталог</p>
+                    <div class="footer-catalog__categories">
+                        <a class="footer-catalog__category" href="#">Автохимия</a>
+                        <a class="footer-catalog__category" href="#">КАМАЗ</a>
+                        <a class="footer-catalog__category" href="#">МТЗ-80, 82 (Д-240/245)</a>
+                        <a class="footer-catalog__category" href="#">Спецодежда</a>
+                        <a class="footer-catalog__category" href="#">УРАЛ</a>
+                        <a class="footer-catalog__category" href="#">АКБ</a>
+                        <a class="footer-catalog__category" href="#">КРАЗ</a>
+                        <a class="footer-catalog__category" href="#">ПД-10, РПД</a>
+                        <a class="footer-catalog__category" href="#">Стройматериалы</a>
+                        <a class="footer-catalog__category" href="#">Фильтра</a>
+                        <a class="footer-catalog__category" href="#">Аксессуары</a>
+                        <a class="footer-catalog__category" href="#">МАЗ</a>
+                        <a class="footer-catalog__category" href="#">ПЖД-30, ПЛАНАР</a>
+                        <a class="footer-catalog__category" href="#">Трактора</a>
+                        <a class="footer-catalog__category" href="#">Шины, камеры</a>
+                        <a class="footer-catalog__category" href="#">Гидравлика</a>
+                        <a class="footer-catalog__category" href="#">Манипуляторы</a>
+                        <a class="footer-catalog__category" href="#">Подшипники</a>
+                        <a class="footer-catalog__category" href="#">Турбокомпрессоры</a>
+                        <a class="footer-catalog__category" href="#">Электрика</a>
+                        <a class="footer-catalog__category" href="#">Запчасти грузовые иномарки</a>
+                        <a class="footer-catalog__category" href="#">Метизы</a>
+                        <a class="footer-catalog__category" href="#">Прочее</a>
+                        <a class="footer-catalog__category" href="#">УАЗ</a>
+                        <a class="footer-catalog__category" href="#">ЯМАЗ, ТМЗ</a>
+                        <a class="footer-catalog__category" href="#">Инструменты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-information__wrapper">
+            <div class="container">
+                <div class="footer-information">
+                    <nav class="footer-information__nav">
+                        <a href="#">О компании</a>
+                        <a href="#">Спецпредложения</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+
+                    <div class="footer-information__contacts">
+                        <div class="footer-information__contacts__title">Связаться с нами</div>
+                        <div class="footer-information__contacts__data">
+                            <div class="footer-information__contacts__data__left">
+                                <a class="footer-information__contacts__data__left__phone"
+                                    href="tel:+7 (8202) 29-12-81 (факс)">+7 (8202) 29-12-81 (факс)</a>
+                                <a class="footer-information__contacts__data__left__phone" href="tel:+7 921 252-35-07">+7
+                                    921 252-35-07</a>
+                                <a class="footer-information__contacts__data__left__email"
+                                    href="mailto:trak35@mail.ru">trak35@mail.ru</a>
+                                <span class="footer-information__contacts__data__left__address">Череповец,
+                                    Кирилловское шоссе, 57а</span>
+                            </div>
+
+                            <div class="footer-information__contacts__data__right">
+                                Часы работы
+                                <br>
+                                Пн – Пт 8:00 – 18:00
+                                <br>
+                                Сб 10:00 – 15:00
+                                <br>
+                                Вс Выходной
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-information__social">
+                        <div class="footer-information__social__title">Мы в соцсетях</div>
+                        <div class="footer-information__social__icons">
+                            <a class="footer-information__social__icons__icon" href="#">
+                                <img src="images/socialmedia/ok.svg" alt="ok">
+                            </a>
+                            <a class="footer-information__social__icons__icon" href="#">
+                                <img src="images/socialmedia/vk.svg" alt="vk">
+                            </a>
+                            <a class="footer-information__social__icons__icon" href="#">
+                                <img src="images/socialmedia/fb.svg" alt="fb">
+                            </a>
+                            <a class="footer-information__social__icons__icon" href="#">
+                                <img src="images/socialmedia/mir.svg" alt="mir">
+                            </a>
+                            <a class="footer-information__social__icons__icon" href="#">
+                                <img src="images/socialmedia/twitter.svg" alt="twitter">
+                            </a>
+                            <a class="footer-information__social__icons__icon" href="#">
+                                <img src="images/socialmedia/Group 689.svg" alt="group689">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom__wrapper">
+            <div class="container">
+                <div class="footer-bottom">
+                    <div class="footer-bottom__left">
+                        <span class="footer-bottom__left__company">© 2024 ООО «АВТОТРАК»</span>
+                        <a class="footer-bottom__left__privacy" href="#">Политика конфиденциальности</a>
+                    </div>
+
+                    <div class="footer-bottom__right">
+                        <div class="footer-bottom__right__created">
+                            <a class="footer-bottom__right__created__made" href="#">
+                                Сделано в
+                                <img src="images/logo/PS.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
