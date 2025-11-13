@@ -608,7 +608,7 @@ header {
         font-size: 36px;
         line-height: 48px;
         color: #36393C;
-        margin-top: 40px;
+        margin-top: 32px;
         margin-right: 14px;
     }
 
@@ -2592,4 +2592,5 @@ body.menu-open {
         height: auto;
         padding: 20px 0;
     }
+
 }
